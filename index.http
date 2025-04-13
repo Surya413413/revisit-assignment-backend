@@ -1,0 +1,60 @@
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "name":"suresh",
+    "email":"sureshnayak6695@gmail.com",
+    "password":"Surya@413"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email":"sureshnayak6695@gmail.com",
+    "password":"Surya@413"
+}
+
+###
+
+POST http://localhost:3000/categories/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0NDQyODk2fQ.1uND2pHFcxeTsg-AdL4PkdRIkiq5ZRgFP0tpM9p8VbE
+
+{
+    "name":"Wedding Clothes",
+    "item_count":"52",
+    "image_url":"https://assets.vogue.in/photos/5ce42e424a30b3507e12d745/2:3/w_2560%2Cc_limit/Wedding-dresses-everything-you-already-didn%25E2%2580%2599t-know-about-them.jpg"
+}
+
+
+###
+DELETE http://localhost:3000/categories/3
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0NDQyODk2fQ.1uND2pHFcxeTsg-AdL4PkdRIkiq5ZRgFP0tpM9p8VbE
+
+###
+
+DELETE http://localhost:3000/categories
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0NDQyODk2fQ.1uND2pHFcxeTsg-AdL4PkdRIkiq5ZRgFP0tpM9p8VbE
+###
+
+
+PUT http://localhost:3000/categories/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0NDQyODk2fQ.1uND2pHFcxeTsg-AdL4PkdRIkiq5ZRgFP0tpM9p8VbE
+
+
+{
+    "name":"cotton cloths",
+    "item_count":"25",
+    "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlqQC5fNkEFFVActJMcOq2pOmnSseEGNFK2Q&s"
+}
+
+###
+GET http://localhost:3000/categories
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0NDQyODk2fQ.1uND2pHFcxeTsg-AdL4PkdRIkiq5ZRgFP0tpM9p8VbE
+###
